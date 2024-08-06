@@ -8,7 +8,7 @@ let obj = {a:10}
 console.log(obj)
 console.log(obj.valueOf())
 console.log(obj.toString())
-console.log(2-[],3-[''],4-['r'],5-['0'],6-['o'],7-[undefined],8-{})
+console.log(2-[],3-[''],4-['r'],5-['0'],6-['o'],7-[undefined],8-{},9-[null])
 //overriding the valueOf() and toString() of obj1
 let obj1 = {b:99,valueOf(){return 98},toString(){return "roshan"}} 
 

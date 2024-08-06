@@ -25,5 +25,14 @@ console.log(2-[2,3,4])
 console.log([2,3,4].valueOf(),[2,3,4].toString())
 console.log({}.toString())
 
+console.log({} + "hello");
+/**
+ * In browser console, 
+ *      {} + "hello" will give error because if a line starts with {},it is considered as block
+ *      
+ *      "hello" + {} -> hello[object Object]
+ */
 //here, both valueOf and toString are returning Object, so TypeError exception is thrown.
 // console.log("roshan" + {a : 90, valueOf(){return {}}, toString(){return {}}});
+
+console.log(`And, "${[].toString()}"`)
